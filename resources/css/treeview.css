@@ -1,0 +1,277 @@
+
+
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+    margin-left:2em;
+    position:relative;
+
+
+}
+.tree ul ul {
+    margin-left:.5em;
+
+}
+
+.tree li {
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    color: #2f5380;
+    font-weight:500;
+    position:relative;
+
+
+}
+
+
+.tree ul li:last-child:before {
+    background:#fff;
+    height:auto;
+    top:1em;
+    bottom:0
+}
+.indicator {
+    margin-right:5px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#369;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color: #993366;
+    border: #0abe13;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+
+}
+
+.tree li:hover{
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    color: #063773;
+    font-weight:700;
+    position:relative;
+}
+
+/*
+.currentHover {
+      background-image: linear-gradient(to bottom, #e9f5e7, #c3d9bf);  background: linear-gradient(90deg, rgba(237, 242, 247) 10%, rgb(187, 237, 245) 0%, rgb(187, 237, 245) 90%, rgba(237, 242, 247) 90%);
+    border-radius: 5px;
+    background: rgb(51,71,176);
+    background: radial-gradient(circle, rgb(125, 143, 239) 1px, rgba(237, 242, 247,1) 90%);
+    border:1px solid #041e60;
+    font-size: 13pt;
+}
+li.currentHover ul {
+    background-color: rgba(237, 242, 247, var(--bg-opacity));
+    / background-image: linear-gradient(to bottom, #e4eef5, #c0d1db);
+}
+*/
+
+.list-group.list-group-tree {
+    padding: 0;
+}
+
+.list-group.list-group-tree .list-group {
+    margin-bottom: 0;
+}
+
+.list-group.list-group-tree > .list-group > .list-group-item {
+    padding-left: 30px;
+}
+.list-group.list-group-tree > .list-group > .list-group > .list-group-item {
+    padding-left: 45px;
+}
+.list-group.list-group-tree > .list-group > .list-group > .list-group-item > .list-group-item {
+    padding-left: 60px;
+}
+.list-group.list-group-tree > .list-group > .list-group > .list-group-item > .list-group-item > .list-group-item {
+    padding-left: 75px;
+}
+.list-group.list-group-tree > .list-group > .list-group > .list-group-item > .list-group-item > .list-group-item > .list-group-item {
+    padding-left: 90px;
+}
+
+.list-group-item .fa {
+    margin-right: 5px;
+}
+
+.fa-chevron:before {
+    content: "\f054"; /*right*/
+}
+.in > .fa-chevron:before {
+    content: "\f078"; /*down*/
+}
+
+
+
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    /*
+    .select2-dropdown {
+        background: red;
+    }
+    */
+    /* Input field */
+    /*#bap + .select2 .select2-selection__rendered {  background-color: yellow; } */
+
+    /* Each result */
+    /*#select2-bap-results { background-color: salmon; }*/
+
+    /* Higlighted (hover) result */
+    /*#select2-bap-results .select2-results__option--highlighted { background-color: aqua! important; }*/
+
+    /* Selected option */
+    /*#select2-bap-results .select2-results__option[aria-selected=true] { background-color: teal !important; }*/
+
+
+    /* Around the search field */
+    /*.select2-search { background-color: lightgray; }*/
+
+    /* Search field */
+    /*.select2-search input { background-color: lightgray; }*/
+
+
+
+.select2-results .select2-highlighted {
+    background: #3ea211;
+}
+
+
+/*----------------genealogy-scroll----------*/
+
+.genealogy-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+.genealogy-scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+.genealogy-scroll::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.genealogy-scroll::-webkit-scrollbar-thumb:hover {
+    background: #d5b14c;
+    transition: 0.5s;
+}
+
+
+/*----------------genealogy-tree----------*/
+.genealogy-body{
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding: 50px;
+    min-height: 500px;
+    padding-top: 10px;
+    text-align: center;
+}
+.genealogy-tree{
+    display: inline-block;
+}
+.genealogy-tree ul {
+    padding-top: 20px;
+    position: relative;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+.genealogy-tree li {
+    float: left; text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+}
+.genealogy-tree li::before, .genealogy-tree li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 2px solid #ccc;
+    width: 50%;
+    height: 18px;
+}
+.genealogy-tree li::after{
+    right: auto; left: 50%;
+    border-left: 2px solid #ccc;
+}
+.genealogy-tree li:only-child::after, .genealogy-tree li:only-child::before {
+    display: none;
+}
+.genealogy-tree li:only-child{
+    padding-top: 0;
+}
+.genealogy-tree li:first-child::before, .genealogy-tree li:last-child::after{
+    border: 0 none;
+}
+.genealogy-tree li:last-child::before{
+    border-right: 2px solid #ccc;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+.genealogy-tree li:first-child::after{
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+.genealogy-tree ul ul::before{
+    content: '';
+    position: absolute; top: 0; left: 50%;
+    border-left: 2px solid #ccc;
+    width: 0; height: 20px;
+}
+.genealogy-tree li a{
+    text-decoration: none;
+    color: #666;
+    font-family: arial, verdana, tahoma;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.genealogy-tree li a:hover+ul li::after,
+.genealogy-tree li a:hover+ul li::before,
+.genealogy-tree li a:hover+ul::before,
+.genealogy-tree li a:hover+ul ul::before{
+    border-color:  #fbba00;
+}
+
+/*--------------memeber-card-design----------*/
+.member-view-box{
+    padding:0px 20px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+}
+.member-image{
+    width: 60px;
+    position: relative;
+}
+.member-image img{
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    background-color :#000;
+    z-index: 1;
+}
+
+.lightgreyiconcolor {color:lightgrey;}
+
