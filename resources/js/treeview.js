@@ -50,7 +50,7 @@ $.fn.extend({
         });
         //fire event to open branch if the li contains a button instead of text
         tree.find('.branch>button').each(function () {
-            $(this).css("background-color", "lightgray");
+         //   $(this).css("background-color", "lightgray");
             $(this).on('click', function (e) {
                 $(this).closest('li').click();
                 e.preventDefault();
@@ -102,6 +102,7 @@ $('li.treess').mouseout(function() {$(this).removeClass('currentHover');});
 
 
 // select2 test
+/*
 $(document).ready(function() {
     $('#selectMulty').select2({
         placeholder: "Select your country",
@@ -175,7 +176,7 @@ $(document).ready(function() {$('#neighborhood1').select2({
     placeholder: "Select-neighborhood",
     allowClear: true,
     theme: "classic"});})
-/*
+
 $(document).ready(function() {$('#country1').select2({
     placeholder: "Select-country",
     allowClear: true,
@@ -207,7 +208,7 @@ function select2Alpine() {
         this.select2.val(value).trigger("change");
     });
 }
-*/
+
 
 // hack select2
 $("#selectMulty").on({
@@ -238,4 +239,4 @@ $(function () {
     });
 });
 
-
+*/
